@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      - DATABASE_URL=postgresql://slnsvm:slnsvm123@postgres:5432/slnsvm_db
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=${SECRET_KEY:-supersecretkey123}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+    ports:
+      - "9010:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    volumes:
+      - ./backend:/app
+    networks:
+      - slnsvm-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - NEXT_PUBLIC_API_URL=https://api.slnsvm.com
+    ports:
+      - "9000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - slnsvm-network
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=slnsvm
+      - POSTGRES_PASSWORD=slnsvm123
+      - POSTGRES_DB=slnsvm_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U slnsvm -d slnsvm_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - slnsvm-network
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis_data:/data
+    networks:
+      - slnsvm-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  slnsvm-network:
+    driver: bridge

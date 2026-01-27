@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(source venv/bin/activate)",
+      "Bash(pip install:*)",
+      "Bash(npm install)",
+      "Bash(psql:*)",
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "Bash(head:*)",
+      "Bash(grep:*)",
+      "Bash(npm install:*)",
+      "Bash(python seed_demo_data.py:*)",
+      "Bash(/Users/pawansingh/Desktop/workspace/slnsvm/backend/venv/bin/python:*)",
+      "Bash(/opt/anaconda3/bin/python:*)",
+      "Bash(__NEW_LINE_3728a314e5740c3c__ echo \"Testing Teacher Login:\")",
+      "Bash(__NEW_LINE_3e16302657898e2a__ echo \"Testing Parent Login:\")",
+      "Bash(/opt/anaconda3/bin/pip install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(sudo -u postgres psql:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)"
+    ]
+  }
+}

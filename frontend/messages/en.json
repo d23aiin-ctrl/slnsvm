@@ -1,0 +1,232 @@
+{
+  "common": {
+    "schoolName": "Sri Laxmi Narayan Saraswati Vidya Mandir",
+    "schoolNameHindi": "श्री लक्ष्मी नारायण सरस्वती विद्या मंदिर",
+    "schoolShortName": "SLNSVM",
+    "tagline": "Bhagwanpur, Vaishali, Bihar",
+    "motto": "विद्या ददाति विनयम्",
+    "mottoEnglish": "Knowledge Gives Humility",
+    "login": "Login",
+    "logout": "Logout",
+    "myPortal": "My Portal",
+    "goToPortal": "Go to Portal",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "academics": "Academics",
+    "faculty": "Faculty",
+    "facilities": "Facilities",
+    "admissions": "Admissions",
+    "gallery": "Gallery",
+    "events": "Events",
+    "notices": "Notices",
+    "contact": "Contact",
+    "more": "More",
+    "cbseDisclosure": "CBSE Disclosure"
+  },
+  "home": {
+    "heroTitle": "Excellence in Education",
+    "heroSubtitle": "Nurturing minds, building character, shaping futures",
+    "heroDescription": "Sri Laxmi Narayan Saraswati Vidya Mandir is committed to providing quality education with a focus on academic excellence, character building, and holistic development.",
+    "applyNow": "Apply Now",
+    "exploreSchool": "Explore Our School",
+    "whyChooseUs": "Why Choose Us",
+    "features": {
+      "academic": {
+        "title": "Academic Excellence",
+        "description": "CBSE curriculum with focus on conceptual learning and practical application"
+      },
+      "faculty": {
+        "title": "Experienced Faculty",
+        "description": "Dedicated teachers committed to student success"
+      },
+      "infrastructure": {
+        "title": "Modern Infrastructure",
+        "description": "Well-equipped classrooms, labs, and sports facilities"
+      },
+      "values": {
+        "title": "Values & Ethics",
+        "description": "Building character alongside academic growth"
+      }
+    },
+    "latestNotices": "Latest Notices",
+    "upcomingEvents": "Upcoming Events",
+    "quickLinks": "Quick Links",
+    "studentLife": "Student Life",
+    "testimonials": "What Parents Say"
+  },
+  "about": {
+    "title": "About Our School",
+    "mission": "Our Mission",
+    "missionText": "To provide quality education that empowers students to become responsible citizens with strong moral values and academic excellence.",
+    "vision": "Our Vision",
+    "visionText": "To be a leading educational institution that nurtures young minds to achieve their full potential and contribute positively to society.",
+    "history": "Our History",
+    "leadership": "School Leadership",
+    "values": "Our Core Values",
+    "achievements": "Achievements"
+  },
+  "academics": {
+    "title": "Academics",
+    "curriculum": "Curriculum",
+    "cbseAffiliated": "CBSE Affiliated",
+    "subjects": "Subjects Offered",
+    "classes": "Classes",
+    "examSchedule": "Examination Schedule",
+    "results": "Academic Results"
+  },
+  "admissions": {
+    "title": "Admissions",
+    "subtitle": "Join Our School Family",
+    "process": "Admission Process",
+    "eligibility": "Eligibility Criteria",
+    "documents": "Required Documents",
+    "fees": "Fee Structure",
+    "applyOnline": "Apply Online",
+    "inquiryForm": "Admission Inquiry",
+    "formLabels": {
+      "studentName": "Student Name",
+      "parentName": "Parent/Guardian Name",
+      "classApplied": "Class Applied For",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "message": "Additional Message"
+    },
+    "submitInquiry": "Submit Inquiry"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "address": "School Address",
+    "reachUs": "Reach Us",
+    "sendMessage": "Send a Message",
+    "formLabels": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Your Message"
+    },
+    "officeHours": "Office Hours",
+    "mondayToFriday": "Monday - Friday",
+    "saturday": "Saturday"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "Glimpses of School Life",
+    "categories": {
+      "all": "All Photos",
+      "events": "Events",
+      "sports": "Sports",
+      "academics": "Academics",
+      "infrastructure": "Infrastructure"
+    }
+  },
+  "events": {
+    "title": "Events & Activities",
+    "subtitle": "School Events Calendar",
+    "upcoming": "Upcoming Events",
+    "past": "Past Events",
+    "categories": {
+      "academic": "Academic",
+      "cultural": "Cultural",
+      "sports": "Sports",
+      "holiday": "Holiday"
+    }
+  },
+  "notices": {
+    "title": "Notices & Announcements",
+    "subtitle": "Stay Updated",
+    "priority": {
+      "high": "Important",
+      "medium": "General",
+      "low": "Information"
+    }
+  },
+  "faculty": {
+    "title": "Our Faculty",
+    "subtitle": "Meet Our Dedicated Teachers",
+    "departments": {
+      "all": "All Departments",
+      "science": "Science",
+      "mathematics": "Mathematics",
+      "english": "English",
+      "hindi": "Hindi",
+      "socialScience": "Social Science",
+      "computer": "Computer Science",
+      "physical": "Physical Education",
+      "arts": "Arts"
+    }
+  },
+  "facilities": {
+    "title": "School Facilities",
+    "subtitle": "World-Class Infrastructure",
+    "categories": {
+      "academics": "Academic Facilities",
+      "sports": "Sports Facilities",
+      "other": "Other Amenities"
+    },
+    "transport": "School Transport",
+    "routes": "Transport Routes"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "followUs": "Follow Us",
+    "copyright": "All rights reserved",
+    "affiliatedWith": "Affiliated with Central Board of Secondary Education",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "portal": {
+    "student": {
+      "title": "Student Portal",
+      "dashboard": "Dashboard",
+      "timetable": "Timetable",
+      "assignments": "Assignments",
+      "attendance": "Attendance",
+      "results": "Results",
+      "materials": "Study Materials"
+    },
+    "parent": {
+      "title": "Parent Portal",
+      "dashboard": "Dashboard",
+      "children": "My Children",
+      "fees": "Fee Payment",
+      "messages": "Messages",
+      "attendance": "Attendance"
+    },
+    "teacher": {
+      "title": "Teacher Portal",
+      "dashboard": "Dashboard",
+      "classes": "My Classes",
+      "attendance": "Mark Attendance",
+      "assignments": "Assignments",
+      "aiTools": "AI Tools"
+    }
+  },
+  "seo": {
+    "homeTitle": "Sri Laxmi Narayan Saraswati Vidya Mandir - Excellence in Education",
+    "homeDescription": "Sri Laxmi Narayan Saraswati Vidya Mandir (CBSE Affiliated School, Bhagwanpur, Vaishali) provides quality education with a focus on academic excellence and holistic development.",
+    "aboutTitle": "About Us - Sri Laxmi Narayan Saraswati Vidya Mandir",
+    "aboutDescription": "Learn about Sri Laxmi Narayan Saraswati Vidya Mandir's mission, vision, history, and leadership. CBSE Affiliated School in Bhagwanpur, Vaishali.",
+    "admissionsTitle": "Admissions - Sri Laxmi Narayan Saraswati Vidya Mandir",
+    "admissionsDescription": "Apply for admission at Sri Laxmi Narayan Saraswati Vidya Mandir. Learn about admission process, eligibility, and fee structure.",
+    "contactTitle": "Contact Us - Sri Laxmi Narayan Saraswati Vidya Mandir",
+    "contactDescription": "Get in touch with Sri Laxmi Narayan Saraswati Vidya Mandir. Find our address, phone number, and email for any inquiries."
+  }
+}

@@ -28,16 +28,7 @@ const facultyMembers: Faculty[] = [
     image: '/images/leadership/principal.jpg',
     department: 'Administration',
   },
-  {
-    id: 2,
-    name: 'Chairman',
-    designation: 'Founder & Chairman',
-    qualification: '',
-    experience: '30+ Years',
-    subjects: ['Vision & Leadership'],
-    image: '/images/leadership/chairmanJI.png',
-    department: 'Administration',
-  },
+
   {
     id: 3,
     name: 'Dr. Anita Sharma',

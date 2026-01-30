@@ -236,6 +236,17 @@ export default function Header() {
 
           {/* Right side actions */}
           <div className="hidden lg:flex items-center gap-3">
+            <div className="flex items-center ml-2 my-2.5">
+              <Image
+                src="/images/VidyaBharatiLogo.png"
+                alt="Vidya Bharati Logo"
+                width={150}
+                height={100}
+                quality={100}
+                priority
+                className="h-20 w-auto object-contain pb-2.5"
+              />
+            </div>
             {isAuthenticated && user ? (
               <div className="relative">
                 <button

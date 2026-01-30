@@ -153,49 +153,17 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Content - Stats Card */}
-            <div className={`transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-              <div className="relative">
-                {/* Main Stats Card */}
-                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
-                  <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold mb-2">Our Journey of Excellence</h3>
-                    <p className="text-primary-200">Building futures, one student at a time</p>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-6">
-                    {stats.map((stat, index) => (
-                      <div
-                        key={stat.label}
-                        className={`text-center p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all duration-300 ${
-                          mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
-                        }`}
-                        style={{ transitionDelay: `${index * 150 + 600}ms` }}
-                      >
-                        <stat.icon className="w-8 h-8 mx-auto mb-3 text-primary-200" />
-                        <div className="text-4xl font-bold mb-1">{stat.value}</div>
-                        <div className="text-sm text-primary-200">{stat.label}</div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Admission Banner */}
-                  <div className="mt-8 p-4 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-2xl border border-yellow-400/30">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-yellow-400/20 rounded-full flex items-center justify-center">
-                        <Bell className="w-6 h-6 text-yellow-300" />
-                      </div>
-                      <div>
-                        <p className="font-semibold text-yellow-100">Admissions Open 2025-26</p>
-                        <p className="text-sm text-yellow-200/80">Limited seats available</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary-400/30 rounded-2xl blur-xl" />
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary-400/30 rounded-2xl blur-xl" />
+            {/* Right Content - School Image */}
+            <div className={`relative transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} flex justify-center items-center p-4`}>
+              <div className="relative w-full h-auto max-w-lg aspect-[3/2] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow border-4 border-primary-300">
+                <Image
+                  src="/images/leadership/School.png"
+                  alt="School Image"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="rounded-3xl"
+                />
               </div>
             </div>
           </div>

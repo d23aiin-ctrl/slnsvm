@@ -10,8 +10,9 @@ const values = [
 ];
 
 const leadership = [
-  { name: 'Chairman', role: 'Founder & Chairman', image: '/images/leadership/chairmanJI.png' },
-  { name: 'Principal', role: 'Principal', image: '/images/leadership/principal.jpg' },
+  { name: 'Principal', role: 'Principal', image: '/images/leadership/Prinicipal.jpeg' },
+  { name: 'President', role: 'President', image: '/images/leadership/President.jpeg' },
+  { name: 'Secretary', role: 'Secretary', image: '/images/leadership/Secretery.png' },
 ];
 
 export default function AboutPage() {
@@ -126,23 +127,29 @@ export default function AboutPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">School Leadership</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-            {leadership.map((person) => (
-              <Card key={person.name} variant="elevated" className="text-center">
-                <CardContent>
-                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gray-200">
-                    <Image
-                      src={person.image}
-                      alt={person.name}
-                      width={128}
-                      height={128}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900">{person.name}</h3>
-                  <p className="text-primary-600">{person.role}</p>
-                </CardContent>
-              </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {leadership.map((person, index) => (
+              <div
+                key={person.name}
+                className={`flex justify-center ${index === 0 ? 'md:col-span-2' : ''}`}
+              >
+                <Card
+                  variant="elevated"
+                  className={`text-center w-full ${index === 0 ? 'max-w-sm' : ''}`}
+                >
+                  <CardContent>
+                    <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gray-200 border-2 border-primary-300">
+                      <Image
+                        src={person.image}
+                        alt={person.name}
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                                      <h3 className="text-xl font-semibold text-gray-900">{person.role}</h3>                  </CardContent>
+                </Card>
+              </div>
             ))}
           </div>
         </div>

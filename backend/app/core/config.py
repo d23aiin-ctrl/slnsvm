@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     SEED_DATA_FORCE: bool = False    # Set to True to force re-seed (clears existing data)
 
     class Config:
-        env_file = ".env"
+        env_file = "../.env"
         case_sensitive = True
         extra = "ignore"
 

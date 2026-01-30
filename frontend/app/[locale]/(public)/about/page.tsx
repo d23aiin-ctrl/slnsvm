@@ -138,12 +138,12 @@ export default function AboutPage() {
                   className={`text-center w-full ${index === 0 ? 'max-w-sm' : ''}`}
                 >
                   <CardContent>
-                    <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gray-200 border-2 border-primary-300">
+                    <div className="w-48 h-48 rounded-full mx-auto mb-4 overflow-hidden bg-gray-200 border-2 border-primary-300">
                       <Image
                         src={person.image}
                         alt={person.name}
-                        width={128}
-                        height={128}
+                        width={192}
+                        height={192}
                         className="w-full h-full object-contain"
                       />
                     </div>

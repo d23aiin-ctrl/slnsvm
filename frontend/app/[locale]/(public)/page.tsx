@@ -157,7 +157,8 @@ export default function HomePage() {
             <div className={`relative transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} flex justify-center items-center p-4`}>
               <div className="relative w-full h-auto max-w-lg aspect-[3/2] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow border-4 border-primary-300">
                 <Image
-                  src="/images/leadership/School.png"
+                  key={Date.now()}
+                  src="/images/leadership/School_N.png"
                   alt="School Image"
                   fill
                   style={{ objectFit: 'cover' }}

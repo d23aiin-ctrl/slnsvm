@@ -25,7 +25,7 @@ const facultyMembers: Faculty[] = [
     qualification: 'M.A., M.Ed., Ph.D.',
     experience: '25+ Years',
     subjects: ['Administration', 'Leadership'],
-    image: '/images/leadership/Prinicipal.jpeg',
+    image: '/images/leadership/Principal.png',
     department: 'Administration',
   },
 

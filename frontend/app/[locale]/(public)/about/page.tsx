@@ -10,8 +10,8 @@ const values = [
 ];
 
 const leadership = [
-  { name: 'Principal', role: 'Principal', image: '/images/leadership/Prinicipal.jpeg' },
-  { name: 'President', role: 'President', image: '/images/leadership/President.jpeg' },
+  { name: 'Principal', role: 'Principal', image: '/images/leadership/Principal.png' },
+  { name: 'President', role: 'President', image: '/images/leadership/President.png' },
   { name: 'Secretary', role: 'Secretary', image: '/images/leadership/Secretery.png' },
 ];
 

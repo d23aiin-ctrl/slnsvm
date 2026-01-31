@@ -12,7 +12,7 @@ const values = [
 const leadership = [
   { name: 'Principal', role: 'Principal', image: '/images/leadership/Principal.png' },
   { name: 'President', role: 'President', image: '/images/leadership/President.png' },
-  { name: 'Secretary', role: 'Secretary', image: '/images/leadership/Secretery.png' },
+  { name: 'Secretary', role: 'Secretary', image: '/images/leadership/Secretery_1.png' },
 ];
 
 export default function AboutPage() {

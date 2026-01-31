@@ -10,9 +10,9 @@ const values = [
 ];
 
 const leadership = [
-  { name: 'Principal', role: 'Principal', image: '/images/leadership/Principal.png' },
   { name: 'President', role: 'President', image: '/images/leadership/President.png' },
   { name: 'Secretary', role: 'Secretary', image: '/images/leadership/Secretery_1.png' },
+  { name: 'Principal', role: 'Principal', image: '/images/leadership/Principal.png', isFullWidth: true },
 ];
 
 export default function AboutPage() {
@@ -128,14 +128,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">School Leadership</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {leadership.map((person, index) => (
+            {leadership.map((person) => (
               <div
                 key={person.name}
-                className={`flex justify-center ${index === 0 ? 'md:col-span-2' : ''}`}
+                className={`flex justify-center ${person.isFullWidth ? 'md:col-span-2' : ''}`}
               >
                 <Card
                   variant="elevated"
-                  className={`text-center w-full ${index === 0 ? 'max-w-sm' : ''}`}
+                  className={`text-center w-full ${person.isFullWidth ? 'max-w-sm' : ''}`}
                 >
                   <CardContent>
                     <div className="w-48 h-48 rounded-full mx-auto mb-4 overflow-hidden bg-gray-200 border-2 border-primary-300">

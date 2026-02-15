@@ -4,13 +4,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
+import app.models  # noqa: F401
 from app.api.v1 import auth, students, parents, teachers, admin, fees, admissions, ai, payments, notifications, bulk
 from app.seed_data import run_seed
 
 logger = logging.getLogger(__name__)
-
-# Create database tables
-Base.metadata.create_all(bind=engine)
 
 
 @asynccontextmanager
@@ -18,6 +16,9 @@ async def lifespan(app: FastAPI):
     """Application lifespan events"""
     # Startup
     logger.info("Starting SLNSVM API...")
+
+    # Ensure schema exists for local non-Docker runs.
+    Base.metadata.create_all(bind=engine)
 
     # Run seed data if enabled
     if settings.SEED_DATA_ENABLED:
